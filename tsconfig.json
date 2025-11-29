@@ -3,6 +3,9 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "auth-lib": ["./projects/auth-lib/src/public-api.ts"]
+    },
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -22,5 +25,25 @@
     "typeCheckHostBindings": true,
     "strictTemplates": true
   },
-  "files": []
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/auth-lib/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/auth-lib/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/shell/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/shell/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/mfe-employee/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/mfe-employee/tsconfig.spec.json"
+    }
+  ]
 }

@@ -1,0 +1,15 @@
+<h1>(Shell)</h1>
+
+<div *ngIf="user$ | async as user">
+  Xin chào: <strong>{{ user.username }}</strong> ({{ user.role }})
+  <button (click)="logout()">Logout</button>
+  <button (click)="pass()">pass_data</button>
+</div>
+<ul>
+  <li><a routerLink="employees">Dashboad</a></li>
+
+  <li><a routerLink="react">React</a></li>
+</ul>
+
+<hr />
+<router-outlet></router-outlet>
